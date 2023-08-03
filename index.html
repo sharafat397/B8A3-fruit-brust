@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/736869819c.js" crossorigin="anonymous"></script>
     <!--Tailwind installation-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -48,8 +49,8 @@
           </div>
     </section>
     <!--Banner Section-->
-    <section class="my-20">
-      <div class="carousel w-9/12 h-[640px] mx-60 ">
+    <section class="my-10 relative">
+      <div class="carousel w-9/12 mx-60 ">
         <!--1st banner-->
         <div id="slide1" class="carousel-item relative w-full "  > 
         
@@ -112,9 +113,23 @@
           </div>
         </div>
       </div>
+      <div class="bg-slate-50 h-60 w-3/5 absolute -bottom-24 left-96 rounded-lg shadow-xl flex gap-10  py-9 px-9 justify-center">
+        <div>
+          <img src="fruit1.png" alt="">
+          <h3>Strawberry</h3>
+        </div>
+        <div> <img src="fruit2.png" alt="">
+          <h3>Orange</h3></div>
+        <div> <img src="fruit3.png" alt="">
+          <h3>Mango</h3></div>
+        <div> <img src="fruit4.png" alt="">
+          <h3>Strawberry</h3></div>
+        <div> <img src="fruit5.png" alt="">
+          <h3>Pomegranate</h3></div>
+      </div>
     </section>
     <!--Deal of the day-->
-    <section>
+    <section class="my-36">
 
       <div class="flex justify-between w-10/12 ml-56" >
         <div>
@@ -189,7 +204,41 @@
                 <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <a class="text-red-500 mx-8" href="">Details</a>
+            <!-- Open the modal using ID.showModal() method -->
+           <button class="btn bg-transparent border-none text-red-500 flex justify-start " onclick="my_modal_2.showModal()">Details</button>
+             <dialog id="my_modal_2" class="modal">
+             <form method="dialog" class="modal-box">
+              <p class=" py-4">
+                <figure><img src="fruit6.png" alt="Fruit"/>
+                </figure>
+                <div class="card-body  text-center ">
+                  <h2 class="card-title flex justify-center">Apples</h2>
+                  
+                  <div class="card-actions ">
+                    <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md mx-auto">
+                      <input type="radio" name="rating-8" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-8" class="mask mask-star-2 bg-red-500" checked />
+                      <input type="radio" name="rating-8" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-8" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-8" class="mask mask-star-2 bg-red-500" />
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mx-auto my-7">
+                    <button class="btn btn-outline btn-error">
+                      close Now
+                    </button>
+                    <button class="btn btn-error">
+                      buy Now
+                    </button>
+                  </div>
+                </p>
+             </form>
+              <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+              </form>
+              </dialog>
+          
           </div>
         </div>
         <!--2nd card-->
@@ -208,7 +257,41 @@
                         <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                     </div>
             </div>
-            <a class="text-red-500 mx-8" href="">Details</a>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn bg-transparent border-none text-red-500 flex justify-start " onclick="my_modal_3.showModal()">Details</button>
+             <dialog id="my_modal_3" class="modal">
+             <form method="dialog" class="modal-box">
+              <p class=" py-4">
+                <figure><img src="fruit7.png" alt="Fruit"/>
+                </figure>
+                <div class="card-body  text-center ">
+                  <h2 class="card-title flex justify-center">Orrange</h2>
+                  
+                  <div class="card-actions ">
+                    <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md mx-auto">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-500" checked />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-500" />
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mx-auto my-7">
+                    <button class="btn btn-outline btn-error">
+                      close Now
+                    </button>
+                    <button class="btn btn-error">
+                      buy Now
+                    </button>
+                  </div>
+                </p>
+             </form>
+              <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+              </form>
+              </dialog>
+          
           </div>
         </div>
         <!--3rd card-->
@@ -227,7 +310,40 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <a class="text-red-500 mx-8" href="">Details</a>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn bg-transparent border-none text-red-500 flex justify-start " onclick="my_modal_4.showModal()">Details</button>
+             <dialog id="my_modal_4" class="modal">
+             <form method="dialog" class="modal-box">
+              <p class=" py-4">
+                <figure><img src="fruit8.png" alt="Fruit"/>
+                </figure>
+                <div class="card-body  text-center ">
+                  <h2 class="card-title flex justify-center">Red Dragon</h2>
+                  
+                  <div class="card-actions ">
+                    <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md mx-auto">
+                      <input type="radio" name="rating-9" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-9" class="mask mask-star-2 bg-red-500" checked />
+                      <input type="radio" name="rating-9" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-9" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-9" class="mask mask-star-2 bg-red-500" />
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mx-auto my-7">
+                    <button class="btn btn-outline btn-error">
+                      close Now
+                    </button>
+                    <button class="btn btn-error">
+                      buy Now
+                    </button>
+                  </div>
+                </p>
+             </form>
+              <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+              </form>
+              </dialog>
           </div>
         </div>
         <!--4th card-->
@@ -246,7 +362,40 @@
                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <a class="text-red-500 mx-8" href="">Details</a>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn bg-transparent border-none text-red-500 flex justify-start " onclick="my_modal_5.showModal()">Details</button>
+             <dialog id="my_modal_5" class="modal">
+             <form method="dialog" class="modal-box">
+              <p class=" py-4">
+                <figure><img src="fruit9.png" alt="Fruit"/>
+                </figure>
+                <div class="card-body  text-center ">
+                  <h2 class="card-title flex justify-center">Orrange</h2>
+                  
+                  <div class="card-actions ">
+                    <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md mx-auto">
+                      <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                      <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mx-auto my-7">
+                    <button class="btn btn-outline btn-error">
+                      close Now
+                    </button>
+                    <button class="btn btn-error">
+                      buy Now
+                    </button>
+                  </div>
+                </p>
+             </form>
+              <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+              </form>
+              </dialog>
           </div>
         </div>
         
@@ -322,32 +471,94 @@
         Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
       </p>
       <!--choose us container-->
-      <div class="grid grid-cols-3 w-9/12 mx-auto ">
+      <div class="grid grid-cols-3 w-9/12 mx-auto my-11 ">
         <!--first choose us-->
         <div class="flex flex-col gap-8">
           <div class="flex items-center justify-between gap-4 ">
-            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-user-group "></i></div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-user-group mx-2 my-2 "></i></div>
             <div>
-              <h3 class="text-xl border-b-2  w-48 ">Dedicated Team</h3>
+              <h3 class="text-2Xl font-extrabold border-b-2  w-48 ">Dedicated Team</h3>
               <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
           <div class="flex items-center justify-between gap-4">
-            <div><i class="fa-solid fa-heart" style="color: #000000;"></i></div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-heart mx-2 my-2" style="color: #000000;"></i></div>
             <div>
-              <h3 class="text-xl border-b-2 w-48 ">Fresh is Best</h3>
+              <h3 class="text-2Xl font-extrabold border-b-2 w-48 ">Fresh is Best</h3>
               <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
           <div class="flex items-center justify-between gap-4">
-            <div><i class="fa-solid fa-gifts"></i></div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-gifts mx-2 my-2"></i></div>
             <div>
-              <h3 class="text-xl border-b-2  w-48">Gift Certificates</h3>
+              <h3 class="text-2Xl font-extrabold border-b-2  w-48">Gift Certificates</h3>
               <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
         </div>
+        <!--second choose us-->
+        <div class="mx-5 rounded-lg">
+          <img src="whychoose1.png" alt="">
+        </div>
+        <!--third choose us-->
+        <div class="flex flex-col gap-8">
+          <div class="flex items-center justify-between gap-4 ">
+            
+            <div>
+              <h3 class="text-2Xl font-extrabold border-b-2  w-48 ">Integrated Supplier</h3>
+              <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-apple-whole mx-2 my-2" style="color: #000000;"></i></div>
+          </div>
+          <div class="flex items-center justify-between gap-4">
+            
+            <div>
+              <h3 class="text-2Xl font-extrabold border-b-2 w-48 ">Fresh is Best</h3>
+              <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-ice-cream mx-2 my-2" style="color: #000000;"></i></div>
+          </div>
+          <div class="flex items-center justify-between gap-4">
+           
+            <div>
+              <h3 class="text-2Xl font-extrabold border-b-2  w-48">Gift Certificates</h3>
+              <p class="max-w-m"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="bg-[#12121226] rounded-full h-10 w-12"><i class="fa-solid fa-thumbs-up mx-2 my-2" style="color: #000000;"></i></div>
+          </div>
+        </div>
       </div>
     </section>
+    <!--footer-->
+    <footer>
+      <section class="mx-10 bg-black w-full h-[526px]">
+        
+          <div class="normal-case font-bold text-3xl text-white flex justify-center gap-5 pt-44">
+            <img src="logo.png" alt="">
+            <h3>Fruit Burst</h3>
+          </div>
+        </div>
+        <!--icon-->
+        <div class="flex gap-16 my-5 justify-center">
+          <a class="text-white font-semibold" href="">Home</a>
+          <a class="text-white font-semibold"   href="">About Us</a>
+          <a class="text-white font-semibold"  href="">Shop</a>
+          <a class="text-white font-semibold"  href="">All Fruits</a>
+          <a class="text-white font-semibold"  href="">Support</a>
+          <a class="text-white font-semibold"  href="">My Account</a>
+        </div>
+        <div class="flex my-7 gap-12 justify-center items-center">
+          <i class="fa-brands fa-twitter text-4xl" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-facebook text-4xl" style="color: #005eff;"></i>
+          <i class="fa-brands fa-youtube text-4xl" style="color: #f20202;"></i>
+          <i class="fa-brands fa-linkedin-in text-4xl" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-instagram text-4xl" style="color: #a5a2a2;"></i>
+          <i class="fa-brands fa-apple text-4xl" style="color: #a3a2a2;"></i>
+        </div>
+        <div>
+          <p class="text-white text-center">Copyright © 2023 - All right reserved by SH ARAFAT Industries Ltd</p>
+        </div>
+      </section>
+    </footer>
 </body>
 </html>
