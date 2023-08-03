@@ -22,7 +22,7 @@
 <body class="font-lato">
     <!--Navbar section-->
     <section>
-        <div class="navbar bg-base-100 bg-[#F85559] max-w-screen-2xl m-auto rounded-full my-4"> 
+        <div class="navbar bg-base-100 bg-[#F85559] lg:w-auto lg:max-w-screen-2xl m-auto rounded-full my-4 mx-16"> 
             <div class="navbar-start">
               <div class="dropdown">  
                 <ul class="flex gap-4 text-white px-4 py-7">           
@@ -50,7 +50,7 @@
     </section>
     <!--Banner Section-->
     <section class="my-10 relative">
-      <div class="carousel w-9/12 mx-60 ">
+      <div class="carousel lg:w-9/12 mx-60 ">
         <!--1st banner-->
         <div id="slide1" class="carousel-item relative w-full "  > 
         
@@ -113,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-slate-50 h-60 w-3/5 absolute -bottom-24 left-96 rounded-lg shadow-xl flex gap-10  py-9 px-9 justify-center">
+      <div class=" invisible lg:visible bg-slate-50  lg:h-60 lg:w-3/5 absolute -bottom-24 left-96 rounded-lg shadow-xl flex gap-10  py-9 px-9 justify-center">
         <div>
           <img src="fruit1.png" alt="">
           <h3>Strawberry</h3>
@@ -131,7 +131,7 @@
     <!--Deal of the day-->
     <section class="my-36">
 
-      <div class="flex justify-between w-10/12 ml-56" >
+      <div class=" grid grid-cols-1 lg:flex justify-between w-10/12 ml-56" >
         <div>
           <h3 class="text-5xl text-[#121212] font-extrabold my-3">
             Deal of the day
@@ -187,7 +187,7 @@
         </div>
       </div>
       <!--deal card-->
-      <div class="flex w-9/12 mx-auto my-10 gap-5">
+      <div class=" grid grid-cols-1 lg:flex w-[2000px] lg:w-9/12 mx-64 lg:mx-auto my-10 gap-10 lg:gap-5">
         <!--1st card-->
         <div class="card w-[350px] h-[400px] bg-base-100 shadow-xl">
           <figure><img src="fruit6.png" alt="Fruit"/></figure>
@@ -405,13 +405,13 @@
     </section>
     <!--Team section-->
     <section>
-      <div class="hero min-h-screen w-9/12 mx-auto my-8 border-collapse"       style="background-image: url(banner1.png);">
+      <div class="hero  min-h-screen w-9/12  lg:mx-auto my-8 border-collapse"       style="background-image: url(banner1.png);">
       <div class="hero-overlay bg-opacity-60">
         <div class="hero-content text-center text-neutral-content">
           <div class="my-52">
             <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
             <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-           <div class="grid grid-cols-4 gap-28">
+           <div class="grid grid-cols-1 lg:grid-cols-4 gap-28">
              <!--first review-->
             <div>
               <img class="h-36 w-36 my-4 mx-auto" src="member1.png " alt="">
@@ -463,7 +463,7 @@
     </div>
   </section>
     <!--why choose us-->  
-    <section class="my-32">
+    <section class="my-32 ">
       <h3 class="font-extrabold text-4xl text-black text-center">
         Why Choose Us
       </h3>
@@ -471,7 +471,7 @@
         Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
       </p>
       <!--choose us container-->
-      <div class="grid grid-cols-3 w-9/12 mx-auto my-11 ">
+      <div class="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-9/12 mx-auto my-11 ">
         <!--first choose us-->
         <div class="flex flex-col gap-8">
           <div class="flex items-center justify-between gap-4 ">
@@ -531,7 +531,7 @@
     </section>
     <!--footer-->
     <footer>
-      <section class="mx-10 bg-black w-full h-[526px]">
+      <section class="mx-10 bg-black w-full lg:w-full h-[526px] ">
         
           <div class="normal-case font-bold text-3xl text-white flex justify-center gap-5 pt-44">
             <img src="logo.png" alt="">
@@ -539,7 +539,7 @@
           </div>
         </div>
         <!--icon-->
-        <div class="flex gap-16 my-5 justify-center">
+        <div class=" grid grid-cols-4 lg:flex gap-x-1 lg:gap-16 my-5 justify-center ">
           <a class="text-white font-semibold" href="">Home</a>
           <a class="text-white font-semibold"   href="">About Us</a>
           <a class="text-white font-semibold"  href="">Shop</a>
